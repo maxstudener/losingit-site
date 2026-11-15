@@ -188,6 +188,28 @@
     </details>
 
     <details>
+      <summary>How do I search for a food?</summary>
+      <div class="answer">
+        <p>On the <strong>Food</strong> tab, tap <span class="path">Add food</span>, then type a food or a brand into the search field. Tap a result to see its calories, choose a portion or an amount, and add it to your meal.</p>
+        <ul>
+          <li><strong>Everyday foods work offline.</strong> Basics like fruit, vegetables, eggs, bread and rice are built into the app, so you can find them even with no signal.</li>
+          <li><strong>Packaged foods need a connection.</strong> Brands and packaged products come from our online food index, so they show up when you&rsquo;re connected.</li>
+          <li><strong>Fewer words work best.</strong> Every word you type has to match, so &ldquo;oatmeal&rdquo; finds more than &ldquo;a big bowl of oatmeal&rdquo;.</li>
+          <li><strong>For a packaged food, try the brand plus the product,</strong> such as the brand name followed by &ldquo;greek yogurt&rdquo; or &ldquo;granola bar&rdquo;.</li>
+        </ul>
+        <p>Can&rsquo;t find it? Scan its barcode, or tap <span class="path">Add it yourself</span> and type the name and calories from the label. Searching never sends the words you type; see the <a href="privacy.html#food-search">privacy policy</a> for how it works.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Where does the food data come from?</summary>
+      <div class="answer">
+        <p>Search results and barcode lookups come from public food databases: <strong>USDA FoodData Central</strong> from the U.S. Department of Agriculture, which includes nutrition labels shared by food makers, <strong><a href="https://world.openfoodfacts.org">Open Food Facts</a></strong>, an open food database filled in by volunteers, and any other sources listed on the <a href="https://losingit-food.pages.dev/attribution.html">food data credits page</a>.</p>
+        <p>These numbers are a helpful starting point, but they can differ from your package, since recipes change and portions vary. If something looks off, tap <span class="path">Adjust the details</span> before you add it, or tap the food later on the Food tab to edit it.</p>
+      </div>
+    </details>
+
+    <details>
       <summary>How do I scan a food barcode?</summary>
       <div class="answer">
         <p>On the <strong>Food</strong> tab, tap <span class="path">Add food</span>, then <span class="path">Scan a barcode</span>. The first time, iOS asks for permission to use the camera. Then point your iPhone at the barcode on the package and the app reads it by itself.</p>
@@ -197,14 +219,15 @@
           <li>Flatten curved or crumpled packaging as best you can.</li>
         </ul>
         <p>If it still won&rsquo;t read, tap <span class="path">Type it instead</span> and type the numbers printed under the stripes (8 to 14 digits), then tap <span class="path">Look it up</span>. You can also choose <span class="path">Type a barcode</span> straight from the Add food screen.</p>
-        <p>If camera access is off, turn it on in the iOS Settings app under <span class="path">Apps &rarr; Losing It &rarr; Camera</span>, or just type the numbers. Looking up a barcode needs an internet connection.</p>
+        <p>If camera access is off, turn it on in the iOS Settings app under <span class="path">Apps &rarr; Losing It &rarr; Camera</span>, or just type the numbers.</p>
+        <p>Looking up a barcode needs an internet connection. The app checks our food index first, which includes nutrition labels shared by food makers, and asks it by a bucket number rather than the barcode itself. If the product isn&rsquo;t there, or the index can&rsquo;t be reached, the app sends just the barcode number to <a href="https://world.openfoodfacts.org">Open Food Facts</a>.</p>
       </div>
     </details>
 
     <details>
       <summary>A product wasn&rsquo;t found, or it has no calories.</summary>
       <div class="answer">
-        <p>Product details come from <a href="https://world.openfoodfacts.org">Open Food Facts</a>, an open food database filled in by volunteers, so some products are missing or incomplete.</p>
+        <p>Product details come from our food index and from <a href="https://world.openfoodfacts.org">Open Food Facts</a>, an open food database filled in by volunteers, so some products are missing or incomplete.</p>
         <ul>
           <li><strong>Not found:</strong> the app opens a short form so you can add it by hand with a name and the calories from the label. It keeps the barcode, so the next time you scan that product the app fills it in from your own log.</li>
           <li><strong>No calories listed:</strong> the app shows what it found and asks you to type in the number from the label.</li>
@@ -261,13 +284,13 @@
       <summary>Is Losing It medical advice?</summary>
       <div class="answer">
         <p>No. Losing It is a personal journal for tracking and encouragement. It isn&rsquo;t a medical device and doesn&rsquo;t provide medical advice, diagnosis or treatment, and Glow Coach notes and affirmations are encouragement, not health guidance.</p>
-        <p>The food log is the same. It doesn&rsquo;t give diet or nutrition advice, the calorie target is a number you choose rather than a recommendation, and calorie numbers from labels or Open Food Facts may not be exact.</p>
+        <p>The food log is the same. It doesn&rsquo;t give diet or nutrition advice, the calorie target is a number you choose rather than a recommendation, and calorie numbers from labels or food databases may not be exact.</p>
         <p>Talk with a doctor or other qualified health professional before starting or changing a weight-loss plan, especially if you are pregnant, have a health condition, or have a history of disordered eating.</p>
       </div>
     </details>
 
     <h2>Privacy</h2>
-    <p>Losing It has no account, no ads and no tracking, and we never see your data. A barcode lookup sends only the barcode number to Open Food Facts. Read the full <a href="privacy.html">privacy policy</a>.</p>
+    <p>Losing It has no account, no ads and no tracking, and we never see your data. Food search never sends the words you type. A barcode lookup sends only the barcode number to Open Food Facts, and only when our food index doesn&rsquo;t have the product or can&rsquo;t be reached. Read the full <a href="privacy.html">privacy policy</a>.</p>
   </div>
 </main>
 

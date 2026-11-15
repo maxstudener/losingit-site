@@ -91,7 +91,7 @@
 <main>
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective <time datetime="2026-11-13">November 13, 2026</time> &middot; Updated <time datetime="2026-11-14">November 14, 2026</time></p>
+    <p class="meta">Effective <time datetime="2026-11-13">November 13, 2026</time> &middot; Updated <time datetime="2026-11-15">November 15, 2026</time></p>
 
     <p>This policy explains how the Losing It app for iPhone (&ldquo;the app&rdquo;) handles your information. Losing It is made and sold by <strong>Powerup Gaming LLC</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;).</p>
 
@@ -102,7 +102,8 @@
         <li>We do not collect, see, sell or share any of your personal data.</li>
         <li>There are no analytics, no ads and no tracking of any kind.</li>
         <li>Your journal and food log live on your iPhone and, if you use iCloud, in your own private iCloud database, which only you can access.</li>
-        <li>When you scan or type a food barcode, only that barcode number is sent to Open Food Facts to look the product up. Nothing about you goes with it.</li>
+        <li>When you search for a food, the words you type are never sent anywhere. The app downloads small numbered files from our public food index, hosted by Cloudflare, and we do not log or store searches. Everyday foods can be found offline.</li>
+        <li>When you scan or type a food barcode, the app checks the same index by a bucket number first. If needed, only that barcode number is sent to Open Food Facts to look the product up. Nothing about you goes with it.</li>
       </ul>
     </section>
 
@@ -112,7 +113,7 @@
       <li><strong>Your journey:</strong> the name you enter, your starting weight, goal weight and start date, and your daily calorie target if you set one.</li>
       <li><strong>Weigh-ins:</strong> each weight with its date, and any mood or note you add.</li>
       <li><strong>Progress photos:</strong> the photos you add, with their date, any caption you write, and the weight from the closest weigh-in.</li>
-      <li><strong>Food log:</strong> each food you log, with its name, brand, calories, servings, meal and date, and its barcode if it came from a scan or a typed barcode.</li>
+      <li><strong>Food log:</strong> each food you log, with its name, brand, calories, servings, meal and date, and its barcode if it has one.</li>
       <li><strong>Settings:</strong> your reminder time, favorite affirmations and the Glow Coach switch.</li>
     </ul>
     <h3>On your iPhone</h3>
@@ -120,25 +121,50 @@
     <h3>In your iCloud, if iCloud is on</h3>
     <p>If you are signed in to iCloud, the app syncs your journey, weigh-ins, photos and food log through Apple&rsquo;s CloudKit to the private database of your own iCloud account, so they can appear on your other devices signed in to the same Apple Account. That private database belongs to you: only you can access it, and we cannot see it. Apple&rsquo;s handling of iCloud data is covered by <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>. Your settings (reminder time, favorite affirmations and the Glow Coach switch) are not synced and stay on each device.</p>
     <h3>Nothing comes to us</h3>
-    <p>We do not run any servers for the app. It contains no analytics, advertising, crash-reporting or other third-party code. Apart from your own iCloud and the barcode lookups described under <a href="#food-lookups">Food lookups</a>, the app does not connect to anything, and it never sends your information to us or to anyone else. If you have chosen in iOS to share analytics with app developers, Apple may give us aggregated usage statistics and crash reports for the app. That sharing is run by Apple under your iOS settings, not by code in the app, and it does not include what you write in your journal.</p>
+    <p>We do not run any servers that receive your information. Our food index is a set of ready-made files hosted by Cloudflare; it only hands out files and has no code that could receive, log or store your searches. The app contains no analytics, advertising, crash-reporting or other third-party code. Apart from your own iCloud and the food index and barcode lookups described under <a href="#food-search">Food search</a> and <a href="#food-lookups">Barcode lookups</a>, the app does not connect to anything, and it never sends your information to us or to anyone else. If you have chosen in iOS to share analytics with app developers, Apple may give us aggregated usage statistics and crash reports for the app. That sharing is run by Apple under your iOS settings, not by code in the app, and it does not include what you write in your journal.</p>
 
     <h2>Camera and photos</h2>
     <p>The camera is used only for progress photos and for scanning food barcodes. Your photo library is used only for progress photos and recap cards. Both are used only when you choose to:</p>
     <ul>
-      <li><strong>Camera:</strong> iOS asks for your permission the first time you tap the camera button to take a progress photo, or the first time you scan a barcode. While you scan, the camera view is read on your iPhone to find the barcode. No picture is saved or sent. Only the barcode number is used, as described under <a href="#food-lookups">Food lookups</a>.</li>
+      <li><strong>Camera:</strong> iOS asks for your permission the first time you tap the camera button to take a progress photo, or the first time you scan a barcode. While you scan, the camera view is read on your iPhone to find the barcode. No picture is saved or sent. Only the barcode number is used, as described under <a href="#food-lookups">Barcode lookups</a>.</li>
       <li><strong>Photo library:</strong> the app uses Apple&rsquo;s photo picker, so it receives only the photos you pick. It does not get access to the rest of your library.</li>
       <li><strong>Saving to Photos:</strong> if you use the share button to save a progress photo or recap card to your photo library, iOS asks for permission to add it. That permission only lets the app add images; it cannot read your library.</li>
     </ul>
     <p>The app saves a resized copy of each photo in your journal and reads the date the photo was taken so it lands in the right place on your timeline. The copy it keeps does not include the photo&rsquo;s location or other camera details. Photos stay on your device and, if iCloud is on, in your private iCloud database.</p>
 
-    <h2 id="food-lookups">Food lookups</h2>
-    <p>When you scan or type a barcode on the Food tab, the app sends only that barcode number, over an encrypted HTTPS connection, to <a href="https://world.openfoodfacts.org">Open Food Facts</a>, an open, non-profit food database. It asks for that product&rsquo;s name, brand, serving size and calories, and nothing else.</p>
+    <h2 id="food-search">Food search</h2>
+    <p>When you search for a food on the Food tab, the app looks in two places:</p>
     <ul>
-      <li><strong>What is not sent:</strong> no name, weight, photos, food log, account or device identifier. The request names the app, not you.</li>
+      <li><strong>Built into the app:</strong> everyday foods, such as fruit, vegetables, eggs and bread, are included in the app itself, so you can find them on your iPhone even without a connection.</li>
+      <li><strong>Our public food index:</strong> for more foods and packaged products, the app downloads small pieces of a public food index that Powerup Gaming publishes at <a href="https://losingit-food.pages.dev">losingit-food.pages.dev</a>. The index is hosted by Cloudflare and is fetched over an encrypted HTTPS connection.</li>
+    </ul>
+    <p>The index is split into thousands of numbered files. For each word you search for, your iPhone works out a bucket number from that word and downloads the file with that number, plus a small file that says which edition of the index is current. Many different words share each bucket number. Your iPhone then finds the matching foods in those files and ranks them itself.</p>
+    <ul>
+      <li><strong>What is sent:</strong> only requests for numbered files. The words you type are never sent, to us or to anyone else.</li>
+      <li><strong>What is not sent:</strong> no search text, name, weight, photos, food log, account or device identifier.</li>
+      <li><strong>What we do with searches:</strong> nothing. We do not log, store or analyse searches, and we never receive what you search for.</li>
+      <li><strong>What Cloudflare can see:</strong> Cloudflare is the hosting provider that delivers the files. Like any web host, it processes each request, including the internet (IP) address it comes from and the numbered file it asks for, in order to deliver that file. How Cloudflare handles that is covered by the <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare privacy policy</a>.</li>
+    </ul>
+    <p>A food you pick from the results is added to your food log like any other food: on your iPhone and, if iCloud is on, in your private iCloud database.</p>
+
+    <h2 id="food-lookups">Barcode lookups</h2>
+    <p>When you scan or type a barcode on the Food tab, the app looks the product up in up to two steps:</p>
+    <ul>
+      <li><strong>First, our food index:</strong> your iPhone works out a bucket number from the barcode and downloads the file with that number from the same Cloudflare-hosted index described under <a href="#food-search">Food search</a>. The barcode itself is not sent there.</li>
+      <li><strong>Then, only if needed, Open Food Facts:</strong> if the index doesn&rsquo;t have the product or can&rsquo;t be reached, the app sends only that barcode number, over an encrypted HTTPS connection, to <a href="https://world.openfoodfacts.org">Open Food Facts</a>, an open, non-profit food database. It asks for that product&rsquo;s name, brand, serving size and nutrition facts (the app uses only the calories), and nothing else.</li>
+      <li><strong>What is not sent:</strong> no name, weight, photos, food log, account or device identifier. The request to Open Food Facts names the app, not you.</li>
       <li><strong>What Open Food Facts can see:</strong> like any website you visit, its servers can see the internet (IP) address the request comes from. How Open Food Facts handles that is covered by the <a href="https://world.openfoodfacts.org/privacy">Open Food Facts privacy policy</a>.</li>
       <li><strong>When nothing is sent:</strong> if you have logged that barcode before, the app uses your own entry and does not look it up again. Foods you add by hand and foods you add again from Recent are never sent anywhere.</li>
     </ul>
-    <p>The foods you log are stored like your weigh-ins: on your iPhone and, if iCloud is on, in your private iCloud database. Product information comes from Open Food Facts and is available under the Open Database License.</p>
+    <p>The foods you log are stored like your weigh-ins: on your iPhone and, if iCloud is on, in your private iCloud database.</p>
+
+    <h2 id="food-data">Where the food data comes from</h2>
+    <p>The food index and the everyday foods built into the app are made from public food databases, including:</p>
+    <ul>
+      <li><strong>USDA FoodData Central</strong> from the U.S. Department of Agriculture, Agricultural Research Service, which is in the public domain.</li>
+      <li><strong><a href="https://world.openfoodfacts.org">Open Food Facts</a></strong>, available under the Open Database License (ODbL), with individual entries under the Database Contents License.</li>
+    </ul>
+    <p>The full list of sources and their licenses is on the <a href="https://losingit-food.pages.dev/attribution.html">food data credits page</a>. Our food index is itself published openly at <a href="https://losingit-food.pages.dev">losingit-food.pages.dev</a>.</p>
 
     <h2>Glow Coach</h2>
     <p>Glow Coach is an optional feature that writes short, encouraging notes. It uses Apple&rsquo;s on-device language model (part of Apple Intelligence) and runs entirely on your iPhone. The notes are written from a few facts about your journey, such as your first name, pounds lost, pounds to go and your weigh-in streak. Nothing is sent to us or to any third party. You can turn Glow Coach off at any time in the app&rsquo;s Settings. When it is off or unavailable on your device, the app shows its built-in encouragement instead.</p>
@@ -165,7 +191,7 @@
 
     <h2>Health disclaimer</h2>
     <div class="note">
-      <p>Losing It is a personal journal for tracking and encouragement. It is not a medical device and does not provide medical advice, diagnosis or treatment. Glow Coach notes and affirmations are encouragement, not health guidance. The optional daily calorie target is a number you choose; the app does not recommend one, and calorie numbers from package labels or Open Food Facts may not be exact. Talk with a doctor or other qualified health professional before starting or changing a weight-loss plan, especially if you are pregnant, have a health condition, or have a history of disordered eating.</p>
+      <p>Losing It is a personal journal for tracking and encouragement. It is not a medical device and does not provide medical advice, diagnosis or treatment. Glow Coach notes and affirmations are encouragement, not health guidance. The optional daily calorie target is a number you choose; the app does not recommend one, and calorie numbers from package labels or food databases may not be exact. Talk with a doctor or other qualified health professional before starting or changing a weight-loss plan, especially if you are pregnant, have a health condition, or have a history of disordered eating.</p>
     </div>
 
     <h2>Changes to this policy</h2>
