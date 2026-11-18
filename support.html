@@ -130,7 +130,7 @@
     <details>
       <summary>How does iCloud sync work, and why isn&rsquo;t my data syncing?</summary>
       <div class="answer">
-        <p>Losing It syncs your journey, weigh-ins, photos and food log automatically through your own private iCloud. For sync to work:</p>
+        <p>Losing It syncs your journey, weigh-ins, photos, food log, water log, and saved foods, recipes and meals automatically through your own private iCloud. For sync to work:</p>
         <ul>
           <li>Be signed in to iCloud in the Settings app, with <strong>iCloud Drive</strong> turned on.</li>
           <li>Use the <strong>same Apple Account</strong> on each device.</li>
@@ -138,7 +138,7 @@
           <li>Be connected to the internet.</li>
         </ul>
         <p>Changes can take a few minutes to show up on your other devices, and photos can take longer. Opening the app on both devices while on Wi-Fi helps. You can check the sync status in Losing It under <span class="path">Settings &rarr; iCloud</span>.</p>
-        <p>Your reminder time, favorite affirmations and the Glow Coach switch are saved per device and don&rsquo;t sync.</p>
+        <p>Your reminder times, water glass size, favorite affirmations and the Glow Coach switch are saved per device and don&rsquo;t sync. Recipes you&rsquo;ve shared to Losing It but haven&rsquo;t saved yet wait on the iPhone you shared them from.</p>
       </div>
     </details>
 
@@ -204,8 +204,8 @@
     <details>
       <summary>Where does the food data come from?</summary>
       <div class="answer">
-        <p>Search results and barcode lookups come from public food databases: <strong>USDA FoodData Central</strong> from the U.S. Department of Agriculture, which includes nutrition labels shared by food makers, <strong><a href="https://world.openfoodfacts.org">Open Food Facts</a></strong>, an open food database filled in by volunteers, and any other sources listed on the <a href="https://losingit-food.pages.dev/attribution.html">food data credits page</a>.</p>
-        <p>These numbers are a helpful starting point, but they can differ from your package, since recipes change and portions vary. If something looks off, tap <span class="path">Adjust the details</span> before you add it, or tap the food later on the Food tab to edit it.</p>
+        <p>Search results, barcode lookups and the foods matched in imported recipes and receipts come from public food databases: <strong>USDA FoodData Central</strong> from the U.S. Department of Agriculture, which includes nutrition labels shared by food makers, <strong><a href="https://world.openfoodfacts.org">Open Food Facts</a></strong>, an open food database filled in by volunteers, and any other sources listed on the <a href="https://losingit-food.pages.dev/attribution.html">food data credits page</a>.</p>
+        <p>These numbers are a helpful starting point, but they can differ from your package, since recipes change and portions vary. If something looks off, tap <span class="path">Adjust the details</span> before you add it, or tap the food later on the Food tab to edit it. For an imported recipe or receipt, tap a food while you check it to change its amount or choose <span class="path">Find a different match</span>.</p>
       </div>
     </details>
 
@@ -221,12 +221,71 @@
       <summary>How do favorites, my own foods and recipes work?</summary>
       <div class="answer">
         <ul>
-          <li><strong>Favorites:</strong> tap the star on any food. Starred foods show up at the top of <span class="path">Add food</span> and open at the amount you logged last time.</li>
+          <li><strong>Favorites:</strong> tap the star on any food. Starred foods show up under <span class="path">Favorites</span> in <span class="path">Add food</span> and open at the amount you logged last time.</li>
           <li><strong>Your own foods:</strong> in <span class="path">Add food</span>, choose <span class="path">Create a food</span> and type the name, serving and calories (macros are optional).</li>
-          <li><strong>Recipes:</strong> build one from foods you search for, your own foods or anything you type in, say how many servings it makes, and Losing It works out each serving. Then log a serving whenever you have it.</li>
+          <li><strong>Recipes:</strong> build one from foods you search for, your own foods or anything you type in, or import one from a web page, a photo or a PDF. Say how many servings it makes, and Losing It works out each serving. Then log a serving whenever you have it.</li>
+          <li><strong>Meals:</strong> save the foods you often have together, like your usual breakfast, and add them all in one tap.</li>
           <li><strong>Quick add:</strong> when you only know the calories, <span class="path">Quick add</span> logs just the number.</li>
         </ul>
-        <p>To repeat a meal, open a meal&rsquo;s menu on the Food tab and choose <span class="path">Same as yesterday</span>, or copy a past meal to today. Touch and hold a food to duplicate it or move it to another meal.</p>
+        <p>To repeat a meal, open a meal&rsquo;s menu on the Food tab and choose <span class="path">Same as yesterday</span>, or copy a past meal to today. To keep it for any day, choose <span class="path">Save as a meal</span>. Touch and hold a food to duplicate it or move it to another meal.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I import a recipe?</summary>
+      <div class="answer">
+        <p>You can bring a recipe in from almost anywhere, and you&rsquo;ll check every ingredient before anything is saved.</p>
+        <ul>
+          <li><strong>From Safari:</strong> open the recipe, tap the Share button, choose <span class="path">Losing It</span>, then tap <span class="path">Save to Losing It</span>.</li>
+          <li><strong>From a recipe app, Photos or Files:</strong> share the recipe, up to 5 photos or screenshots, or its PDF to Losing It the same way. Photos may not keep the order you picked them in, so for several screenshots, <span class="path">Choose screenshots or photos</span> in the app keeps your order. In a recipe app, you can also copy the recipe&rsquo;s link and paste it into Losing It.</li>
+          <li><strong>From Notes, Messages or a social post:</strong> copy the recipe&rsquo;s text, including the ingredients, and paste it into Losing It.</li>
+          <li><strong>In the app:</strong> on the Food tab, tap <span class="path">Add food</span>, then <span class="path">Import a recipe</span>. From there you can paste a link or a recipe&rsquo;s text, choose up to 5 screenshots or photos in order, open a PDF or file, or scan up to 5 cookbook pages with your camera.</li>
+        </ul>
+        <p>After you share a recipe, open Losing It. The newest recipe you shared in the last half hour opens by itself. Others wait under <span class="path">Shared with Losing It</span> in <span class="path">Add food</span> and on the <span class="path">Import a recipe</span> screen, which show the 3 newest at a time. Losing It keeps the 10 newest, for up to 7 days. If you allow notifications from Losing It, you can also tap &ldquo;Your recipe is ready to check&rdquo;.</p>
+        <p>Losing It matches each ingredient and its amount to a food. Tap anything marked <span class="path">Needs a match</span> or <span class="path">Check the amount</span> to fix it, and set how many servings the recipe makes. Then tap <span class="path">Just save the recipe</span>, or save it and add a serving to your meal right away. Your recipe goes into My foods, ready whenever you have it.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Losing It couldn&rsquo;t find a recipe&rsquo;s ingredients.</summary>
+      <div class="answer">
+        <ul>
+          <li><strong>Web pages:</strong> open the page in Safari and share it to Losing It from there. Some sites only open in a browser, so a link pasted from somewhere else may not open. You can also copy the ingredients and paste them in, or take a screenshot of them.</li>
+          <li><strong>Photos and screenshots:</strong> make sure the whole ingredient list is in view, flat and well lit. For a long recipe, choose a few screenshots in order.</li>
+          <li><strong>Social posts:</strong> copy the caption with the ingredients and paste it in.</li>
+          <li><strong>Very short recipes:</strong> a photo or PDF of a recipe with a single ingredient counted in pieces, like &ldquo;Scrambled eggs, 3 eggs&rdquo;, says it couldn&rsquo;t find the ingredients. Copy and paste its text instead, and it reads fine.</li>
+          <li><strong>No connection:</strong> opening a link needs the internet. Tap <span class="path">Try again</span> once you&rsquo;re back online, or paste the recipe&rsquo;s text instead.</li>
+        </ul>
+        <p>An ingredient Losing It can&rsquo;t match is marked <span class="path">Needs a match</span>. Tap it to search for a food that matches. To leave it out, touch and hold it and choose <span class="path">Remove</span>. To leave out every ingredient without a match at once, use the remove button under the list. Without a match it counts as 0 calories.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I import a receipt?</summary>
+      <div class="answer">
+        <p>A receipt comes in as a meal, so a grocery haul or a takeout order becomes foods you can log in one go. On the Food tab, tap <span class="path">Add food</span>, then <span class="path">Import a receipt</span>. You can:</p>
+        <ul>
+          <li><span class="path">Scan a paper receipt</span> with your camera. Lay it flat in good light. A long one can go in a few pages.</li>
+          <li><span class="path">Choose screenshots or photos</span>, up to 5 in order. In a delivery app, open the order, then its receipt. In a grocery app, look in your purchase history.</li>
+          <li><span class="path">Open a PDF or file</span>, such as a receipt PDF or an email saved as a PDF.</li>
+          <li><span class="path">Paste receipt text</span> copied from an email or web page.</li>
+        </ul>
+        <p>Losing It finds the foods, matches each one, and shows them as a meal named after the store, or &ldquo;Receipt&rdquo; and the date when the store can&rsquo;t be read. Check each food and its amount, and tap one to change it or find it a match. Then tap <span class="path">Just save the meal</span> to keep it in My meals, or add it to your day, with or without saving it.</p>
+        <p>The receipt itself, its prices and its totals are never saved. A food without a match counts as 0 calories until you find one or leave it out.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do saved meals work?</summary>
+      <div class="answer">
+        <p>A saved meal is a group of foods you often have together, like your usual breakfast, that you can add in one tap.</p>
+        <ul>
+          <li><strong>Save one you&rsquo;ve logged:</strong> on the Food tab, open a meal&rsquo;s menu and choose <span class="path">Save as a meal</span>.</li>
+          <li><strong>Build one:</strong> in <span class="path">Add food</span>, tap <span class="path">Build a meal</span> in the <span class="path">My meals</span> card. Once you have a meal, you&rsquo;ll find it under the + beside <span class="path">My meals</span>. Give it a name, then tap <span class="path">Add a food</span> (then <span class="path">Add another</span>) for each food. To start from a receipt, choose <span class="path">Import a receipt</span> instead.</li>
+          <li><strong>Log one:</strong> tap the + beside a meal in <span class="path">My meals</span> to add all of it at once. Or tap the meal to see what&rsquo;s in it, tap any food to leave it out this time, then add the rest. Each food is added on its own, so you can change or remove one later, and <span class="path">Undo</span> takes the whole meal back right after.</li>
+          <li><strong>Change one:</strong> tap the meal, then <span class="path">Edit the meal</span>.</li>
+        </ul>
+        <p>The <span class="path">Add a food</span> screen in the meal builder works like Add food. Search for a food, <span class="path">Scan a barcode</span>, <span class="path">Type a barcode</span>, <span class="path">Add it yourself</span>, use <span class="path">Quick add</span>, or pick one of yours. A recent food goes in with one tap, and the screen stays open for more. You can also tap one of <span class="path">My meals</span> to add all its foods, <span class="path">Import a receipt</span> to add a receipt&rsquo;s foods for you to check, or <span class="path">Import a recipe</span> to save a recipe to My foods and put a serving in this meal.</p>
       </div>
     </details>
 
@@ -282,7 +341,7 @@
     <details>
       <summary>How do I reset and start over?</summary>
       <div class="answer">
-        <p>Open Settings (the gear icon on the Journey tab), scroll to the bottom and tap <span class="path">Erase everything &amp; start fresh</span>, then confirm. This deletes your journey, weigh-ins, photos and food log and clears the widgets and reminders.</p>
+        <p>Open Settings (the gear icon on the Journey tab), scroll to the bottom and tap <span class="path">Erase everything &amp; start fresh</span>, then confirm. This deletes your journey, weigh-ins, photos, food log, water log, and saved foods, recipes and meals, and clears the widgets, reminders and any recipes waiting to be checked.</p>
         <p>If iCloud sync is on, this also erases your journal from iCloud and from every device signed in to that iCloud account. It can&rsquo;t be undone.</p>
         <p>To remove Losing It from one iPhone only, delete the app from that iPhone. Your iCloud copy stays and comes back if you reinstall.</p>
       </div>
@@ -313,13 +372,13 @@
       <summary>Is Losing It medical advice?</summary>
       <div class="answer">
         <p>No. Losing It is a personal journal for tracking and encouragement. It isn&rsquo;t a medical device and doesn&rsquo;t provide medical advice, diagnosis or treatment, and Glow Coach notes and affirmations are encouragement, not health guidance.</p>
-        <p>The food log is the same. It doesn&rsquo;t give diet or nutrition advice, the calorie target is a number you choose rather than a recommendation, and calorie numbers from labels or food databases may not be exact.</p>
+        <p>The food log is the same. It doesn&rsquo;t give diet or nutrition advice, the calorie target is a number you choose rather than a recommendation, and calorie numbers from labels, food databases, imported recipes or receipts may not be exact.</p>
         <p>Talk with a doctor or other qualified health professional before starting or changing a weight-loss plan, especially if you are pregnant, have a health condition, or have a history of disordered eating.</p>
       </div>
     </details>
 
     <h2>Privacy</h2>
-    <p>Losing It has no account, no ads and no tracking, and we never see your data. Food search never sends the words you type. A barcode lookup sends only the barcode number to Open Food Facts, and only when our food index doesn&rsquo;t have the product or can&rsquo;t be reached. Read the full <a href="privacy.html">privacy policy</a>.</p>
+    <p>Losing It has no account, no ads and no tracking, and we never see your data. Food search never sends the words you type. A barcode lookup, whether you scan it, type it or it&rsquo;s printed on a receipt, sends only the barcode number to Open Food Facts, and only when our food index doesn&rsquo;t have the product or can&rsquo;t be reached. Recipes and receipts you import are read on your iPhone, and the photos, scans, PDFs and text themselves are never uploaded. Anything you save from them, or add to your day, syncs through your own private iCloud like the rest of your journal, if iCloud is on. To read a recipe from a link, or a page from Safari that didn&rsquo;t include its recipe, your iPhone opens that page straight from its website. If the recipe lives on another site that page points to, it opens that one page too. Either way, it sends no cookies and nothing from your journal. Read the full <a href="privacy.html">privacy policy</a>.</p>
   </div>
 </main>
 
